@@ -2,9 +2,9 @@
   "name": "frontend-engineer-roadmap",
   "version": "1.0.0",
   "description": "This is the collection of links, which has inspired and motivated me to improve my skills of development.",
-  "main": "./doc/index.html",
+  "main": "./docs/index.html",
   "directories": {
-    "doc": "doc"
+    "docs": "docs"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,10 @@
     "gulp-babel": "^6.1.2",
     "gulp-less": "^3.3.0",
     "gulp-load-plugins": "^1.4.0",
+    "gulp-npm-files": "^0.1.3",
     "gulp-sourcemaps": "^2.4.0"
+  },
+  "dependencies": {
+    "vue": "^2.1.10"
   }
 }

@@ -11,19 +11,23 @@ function lazyLoadTask(taskName, taskFilePath, options) {
     })   
 }
 
+lazyLoadTask('copyNpmDependencies', './gulp-tasks/copyNpmDependencies', {
+    dest: './docs/js/libs'
+});
+
 lazyLoadTask('styles', './gulp-tasks/styles', {
     src: './src/less/**/*.less',
-    dest: './doc/styles'
+    dest: './docs/styles'
 });
 
 lazyLoadTask('scripts', './gulp-tasks/scripts',{
     src: './src/js/**/*.js',
-    dest: './doc/js'
+    dest: './docs/js'
 });
 
 lazyLoadTask('views', './gulp-tasks/views',{
     src: './src/views/**/*.html',
-    dest: './doc'
+    dest: './docs'
 });
 
-gulp.task('build', gulp.parallel('styles', 'scripts', 'views'));
+gulp.task('build', gulp.parallel('copyNpmDependencies', 'styles', 'scripts', 'views'));
