@@ -1,1 +1,27 @@
-<h1>Good Morning, Gulp Build Calling!</h1>
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Front-end Engineer Roadmap</title>
+</head>
+
+<body>
+    <div class="content-wrapper" id="app">
+        <h1 class="title">Front-end Engineer Roadmap</h1>
+        <div class="jumbotron">
+            This is the collection of links, which has inspired and motivated me to improve my skills of development.
+        </div>
+        <template v-for="group in linkGroups" v-cloak v-once>
+            <h2 class="subtitle">{{group.name}}</h2>
+            <ul class="todo-list">
+                <li class="todo-list__item" v-for="link in group.data">
+                    <a class="todo-list__link" target="_blank" v-bind:href="link.url">{{link.title}}</a>
+                    <span class="todo-list__tag highlighting" v-for="tag in link.tags" v-on:click="tagClick(tag)">{{tag.name}}</span>
+                </li>
+            </ul>
+        </template>
+    </div>
+</body>
+
+</html>
+<script src=""></script>

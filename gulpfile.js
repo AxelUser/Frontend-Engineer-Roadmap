@@ -12,8 +12,18 @@ function lazyLoadTask(taskName, taskFilePath, options) {
 }
 
 lazyLoadTask('styles', './gulp-tasks/styles', {
-    src: './src/styles/**/*.less',
+    src: './src/less/**/*.less',
     dest: './doc/styles'
 });
 
-gulp.task('build', gulp.series('styles'));
+lazyLoadTask('scripts', './gulp-tasks/scripts',{
+    src: './src/js/**/*.js',
+    dest: './doc/js'
+});
+
+lazyLoadTask('views', './gulp-tasks/views',{
+    src: './src/views/**/*.html',
+    dest: './doc'
+});
+
+gulp.task('build', gulp.parallel('styles', 'scripts', 'views'));

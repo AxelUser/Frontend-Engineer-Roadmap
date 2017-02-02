@@ -1,0 +1,118 @@
+html,
+body,
+h1,
+h2,
+div,
+span,
+ul,
+li,
+p {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+body {
+  background-image: linear-gradient(to bottom right, #5cc8ff 0%, #d63c6b 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  font-family: 'PT Sans', sans-serif;
+}
+.content-wrapper {
+  max-width: 550px;
+  padding: 0 8px;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .content-wrapper {
+    font-size: 17.6px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+.title {
+  margin: 10px 0 0 0;
+  color: #183446;
+  font-size: 2em;
+}
+.subtitle {
+  color: #183446;
+  text-decoration: underline;
+  margin: 20px 0 0 0;
+  font-size: 1.5em;
+}
+.todo-list {
+  padding: 15px 0 0 19.5px;
+}
+@media (min-width: 768px) {
+  .todo-list {
+    display: inline-block;
+    padding-left: 15px;
+  }
+}
+.todo-list__item {
+  color: #08090A;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+}
+@media (min-width: 768px) {
+  .todo-list__item {
+    padding: 5px;
+    margin-right: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    width: 300px;
+    border-radius: 2px;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+.todo-list__link {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 3px 0 0;
+}
+@media (min-width: 768px) {
+  .todo-list__link {
+    flex: 0 0 100%;
+    align-self: flex-start;
+    width: 100%;
+  }
+}
+.todo-list__link:visited {
+  color: inherit;
+}
+.todo-list__tag {
+  display: inline;
+}
+@media (min-width: 768px) {
+  .todo-list__tag {
+    align-self: flex-end;
+  }
+}
+.todo-list__tag + .todo-list__tag {
+  margin-left: 5px;
+}
+.highlighting {
+  border-radius: 10px;
+  padding: 0 8px 1px 7px;
+  background: #046E8F;
+  color: #F3F8F2;
+  cursor: pointer;
+}
+.jumbotron {
+  background: #046E8F;
+  border-radius: 10px;
+  color: #F3F8F2;
+  padding: 5px 10px 12px 10px;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    max-width: 700px;
+  }
+}

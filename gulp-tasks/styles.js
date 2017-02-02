@@ -1,7 +1,10 @@
+'use strict'
+
 module.exports = function (gulp, plugins, options) {
-    return function () {
-        return gulp.src(options.src)
+    return function (callback) {
+        let stream = gulp.src(options.src)
             .pipe(plugins.less())
-            .dest(options.dest)
+            .pipe(gulp.dest(options.dest));
+        return stream;
     }
 }
