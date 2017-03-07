@@ -1,11 +1,132 @@
 [
     {
-        "collectionName" : "Online Books",
+        "collectionName": "Online Books",
         "data": [
             {
                 "title": "You Don't Know JS (book series)",
-                "url": "https://github.com/getify/You-Dont-Know-JS"
+                "url": "https://github.com/getify/You-Dont-Know-JS",
+                "tags": [
+                    "GitHub"
+                ]
             }
         ]
-    }    
+    },
+    {
+        "collectionName": "Articles",
+        "data": [
+            {
+                "title": "How to Become a Great Front-End Engineer",
+                "url": "https://philipwalton.com/articles/how-to-become-a-great-front-end-engineer/",
+                "tags": [
+                    "Blog"
+                ]
+            },
+            {
+                "title": "Front-end engineer differs from front-end developer",
+                "url": "https://medium.com/@amitmojumder/front-end-engineer-differs-from-front-end-developer-68efe13fce7b#.lbj5aa60x",
+                "tags": [
+                    "Medium"
+                ]
+            },
+            {
+                "title": "Growing as Software Engineer",
+                "url": "http://www.metadevelopment.io/growing-as-software-engineer/",
+                "tags": [
+                    "Blog"
+                ]
+            },
+            {
+                "title": "Understanding Flexbox: Everything you need to know",
+                "url": "https://medium.freecodecamp.com/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af#.br8l8plbk",
+                "tags": [
+                    "Medium"
+                ]
+            },
+            {
+                "title": "Everything I know about Responsive Web Typography",
+                "url": "https://zellwk.com/blog/responsive-typography/",
+                "tags": [
+                    "Blog"
+                ]
+            },
+            {
+                "title": "Callback Hell",
+                "url": "http://callbackhell.com/",
+                "tags": [
+                    "Landing"
+                ]
+            }
+        ]
+    },
+    {
+        "collectionName": "Tips`n`Tricks",
+        "data": [
+            {
+                "title": "A Fresh Approach to Responsive HTML5 Tables",
+                "url": "http://thenewcode.com/852/A-Fresh-Approach-to-Responsive-HTML5-Tables",
+                "tags": [
+                    "Blog"
+                ]
+            }
+        ]
+    },
+    {
+        "collectionName": "Documentation",
+        "data": [
+            {
+                "title": "ES6 Cheatsheet",
+                "url": "https://github.com/DrkSephy/es6-cheatsheet",
+                "tags": [
+                    "GitHub"
+                ]
+            },
+            {
+                "title": "LESS Features",
+                "url": "http://lesscss.org/features/",
+                "tags": [
+                    "Docs"
+                ]
+            },
+            {
+                "title": "SASS Reference",
+                "url": "http://sass-lang.com/documentation/file.SASS_REFERENCE.html",
+                "tags": [
+                    "Docs"
+                ]
+            },
+            {
+                "title": "BEM Methodology",
+                "url": "https://en.bem.info/methodology/quick-start/",
+                "tags": [
+                    "Docs"
+                ]
+            }
+        ]
+    },
+    {
+        "collectionName": "Applications",
+        "data": [
+            {
+                "title": "Can I use…",
+                "url": "http://caniuse.com/#home",
+                "tags": [
+                    "WebApp"
+                ]
+            },
+            {
+                "title": "Keycode Info",
+                "url": "http://keycode.info/",
+                "tags": [
+                    "WebApp"
+                ]
+            },
+            {
+                "title": "Accessible color combinations",
+                "url": "https://toolness.github.io/accessible-color-matrix/",
+                "tags": [
+                    "WebApp"
+                ]
+            }
+        ]
+    }
 ]
