@@ -126,6 +126,13 @@
                 "tags": [
                     "WebApp"
                 ]
+            },
+            {
+                "title": "Mimic - Seamless client side mocking",
+                "url": "https://mimic.js.org/",
+                "tags": [
+                    "WebApp"
+                ]
             }
         ]
     }
